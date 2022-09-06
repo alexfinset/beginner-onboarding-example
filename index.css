@@ -1,0 +1,90 @@
+/* common */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 23px;
+  text-align: center;
+}
+
+form {
+  padding: 5px;
+}
+
+input[type="search"] {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  height: 54px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+/* container */
+.container {
+  position: relative;
+  margin: 10px;
+  padding: 5px;
+}
+
+#loader {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+#loader > span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#employees {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.employee {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.img-container {
+  padding: 5px;
+}
+.img-container > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal #employee-detail {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+}
